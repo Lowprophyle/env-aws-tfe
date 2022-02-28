@@ -12,7 +12,7 @@ resource "aws_security_group" "allow_tls" {
   }
 
   ingress {
-    description      = "TLS from VPC"
+    description      = "HTTP from VPC"
     from_port        = 80
     to_port          = 80
     protocol         = "tcp"
